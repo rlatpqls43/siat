@@ -1,3 +1,4 @@
+// íŽ¸ì§‘ í…ŒìŠ¤íŠ¸
 package book.view;
 
 import java.util.ArrayList;
@@ -8,28 +9,28 @@ import book.model.dto.BookOrderDTO;
 
 public class EndView {
 	
-	// ¸ðµç ÁÖ¹® ¸®½ºÆ® Ãâ·Â
+	// ëª¨ë“  ì£¼ë¬¸ ë¦¬ìŠ¤íŠ¸ ì¶œë ¥
 	public static void bookListView(ArrayList allbooklist) {
 		
 		int length = allbooklist.size();
 		if (length != 0) {
 			for (int index = 0; index < length; index++) {
-				System.out.println("Á¶È¸ " + (index + 1) + " - " + allbooklist.get(index));
+				System.out.println("ì¡°íšŒ " + (index + 1) + " - " + allbooklist.get(index));
 			}
 		}
 	}
 	
-	// Æ¯Á¤ ÁÖ¹® Á¶È¸ Ãâ·Â
+	// íŠ¹ì • ì£¼ë¬¸ ì¡°íšŒ ì¶œë ¥
 	public static void OrderView(BookOrderDTO bookorder) {
 		System.out.println(bookorder);
 	}
 	
-	// ¸ðµç DTO Á¤º¸ Ãâ·ÂÇÏ´Â ¸Þ¼Òµå
+	// ëª¨ë“  DTO ì •ë³´ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
 	public static void allView(Object object) {
 		System.out.println(object);
 	}
 
-	// ¿¹¿Ü »óÈ² Ãâ·Â
+	// ì˜ˆì™¸ ìƒí™© ì¶œë ¥
 	public static void showError(String msg) {
 		System.out.println(msg);
 
